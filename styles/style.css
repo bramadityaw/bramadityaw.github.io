@@ -43,17 +43,13 @@ body {
     text-decoration: underline;
 }
 
-.col {
-    flex: 1 0 0%;
-    flex-direction: column;
-}
-
-.div-center {
+.card-spacer {
     position: relative;
     top: 4.5rem;
 }
 
 .id-card-container {
+    display: flex;
     background-color: var(--id-card);
     border-radius: 2.4%;
     width: 600px;
@@ -63,18 +59,12 @@ body {
 }
 
 .id-card-content {
-    display: flex;
-    padding: 8px;
+    padding: 24px;
     & h1, h2, h3, h4, h5, h6 {
         margin: 0;
     }
 }
 
-.id-card-header {
-    position: relative;
-    top: 16px;
-    left: 20px;
-}
 
 .id-card-header h2 {
     font-family: 'Merriweather', serif;
