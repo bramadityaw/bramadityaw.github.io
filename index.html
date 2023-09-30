@@ -6,6 +6,11 @@
     <title>R. Bramaditya Ario Wirawisesa</title>
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabarito:wght@500&display=swap"
+      rel="stylesheet" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -26,35 +31,44 @@
     </style>
   </head>
   <body>
-    <div class="bottom-nav">
-      <a href="#about" id="active">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-    <!-- ID Card -->
-    <div class="card-spacer">
-      <div class="id-card-container" id="about">
-        <div class="id-card-content">
-          <h2>DEVELOPER LICENSE</h2>
+    <!-- Hero -->
+    <div class="container flex txt-white">
+      <div class="" style="width: 100%;" id="about">
+        <h1>hello there, visitor.</h1>
+        <h3 style="font-weight: 500">
+          my name is R. Bramaditya. you can call me Bram.
+        </h3>
+        <p>I am a web developer and maker. I really like making stuff.</p>
+      </div>
+      <div class="" style="width: 100%;">
+        <nav style="position: sticky; top: 0; margin-left: 2dvw; text-align: right;">
           <ul>
-            <li>Name: R. Bramaditya Ario Wirawisesa</li>
-            <li>Origin: Indonesia</li>
             <li>
-              Occupation: Student <br />
-              <a id="ipb" href="https://sv.ipb.ac.id">@IPB Vocational School</a>
+              <a href="#about" class="active">about</a>
+            </li>
+            <li>
+              <a href="#projects">projects</a>
+            </li>
+            <li>
+              <a href="#contact">contact</a>
             </li>
           </ul>
-        </div>
-        <div class="id-card-content">
-          <div class="id-card-photo">
-            <img
-              src="assets/id_profile-photo_temp.jpg"
-              alt="Foto R. Bramaditya Ario Wirawisesa pada tahun 2023" />
-          </div>
-        </div>
+        </nav>
       </div>
     </div>
-    <!-- Projects -->
-    <!-- COntact -->
+    <!-- Hero -->
+    <div class="container txt-white" id="projects">
+      Projects I'm working on <a href="http://github.com/bramadityaw">Github</a>:
+      <ul>
+        <li> <a href="https://github.com/WayuAji30/ButcheryApp">Butchery</a>: An e-commerce web app that directly connects producers of meat products with consumers</li>
+      </ul>
+    </div>
+    <div class="container txt-white" id="contact">
+      You can find me on:
+      <ul>
+        <li>Linkedin: <a href="https://linkedin.com/in/r-bramaditya-ario-wirawisesa-747963288">R. Bramaditya</a></li>
+        <li>Instagram: <a href="http://instagram.com/bramadityaw">@bramadityaw</a></li>
+      </ul>
+    </div>
   </body>
 </html>
