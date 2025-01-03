@@ -1,11 +1,13 @@
 :root {
     --white: #FFFFFF;
+    --light-gray: #989898;
     --black: #000000;
     --red: #CD1818;
+    --purple: #6A00A3;
 
     --font-semibold: 600;
 
-    --text: var(--white);
+    --text: var(--light-gray);
     --back: var(--black);
     --fore: var(--red);
 }
@@ -17,21 +19,13 @@ body {
 }
 
 .container {
-    width: 65%;
-    max-width: 600px;
+    width: 80%;
     min-width: 280px;
 
     margin-left: auto;
     margin-right: auto;
-}
 
-main {
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-
-    width: 65%;
+    padding-top: 20dvh;
 }
 
 main nav {
@@ -49,9 +43,53 @@ main nav section h2 {
     text-align: center;
 }
 
-main h1.title {
+#professional h2::after {
+    content: '';
+    border-radius: 50%;
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-left: 0.5em;
+    background-color: var(--red);
+}
+
+#personal h2::before {
+    content: '';
+    border-radius: 50%;
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5em;
+    background-color: var(--purple);
+}
+
+h1.title {
     font-weight: var(--font-semibold);
-    font-size: 4.5rem;
+    font-size: 2.5rem;
+}
+
+@media (min-width: 640px) {
+    .container {
+        display: flex;
+    }
+
+    h1.title {
+        font-size: 3.75rem;
+    }
+
+    aside {
+        width: 20%;
+    }
+
+    aside h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    h1.title {
+        font-size: 4.5rem;
+    }
 }
 
 main .links {
@@ -62,6 +100,48 @@ main .links {
     font-size: 1.5rem;
 }
 
-main .links li {
-    margin-right: 0.75rem;
+.links li + li {
+    margin-left: 0.75rem;
+}
+
+.links li a {
+    border-radius: 0.25rem;
+    transition: background-color 0.333s, padding 0.333s;
+}
+
+.links li a:hover {
+    padding: 0.25em;
+    color: white;
+    transition: background-color 0.333s, padding 0.333s;
+}
+
+#professional .links li a:hover {
+    background-color: var(--purple);
+}
+
+#personal .links li a:hover {
+    background-color: var(--red);
+}
+
+aside h1 {
+    text-align: center;
+    font-size: 1.75rem;
+}
+
+aside ul {
+    margin-top: 1rem;
+}
+
+aside ul li {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+aside ul li + li {
+    margin-top: 0.5rem;
+}
+
+aside ul li a {
+    text-decoration: underline;
+    color: var(--red);
 }
