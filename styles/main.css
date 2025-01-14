@@ -12,6 +12,8 @@
     --fore: var(--red);
 
     --top-pad: 15dvh;
+    --sub-h-size: 1.25rem;
+    --sub-li-size: 1.25rem;
 }
 
 body {
@@ -41,7 +43,7 @@ main nav section {
 main nav section h2 {
     margin-bottom: 0.75rem;
 
-    font-size: 1.5rem;
+    font-size: var(--sub-h-size);
     text-align: center;
 }
 
@@ -72,6 +74,8 @@ h1.title {
 
 @media (min-width: 640px) {
     :root {
+        --sub-h-size: 1.5rem;
+        --sub-li-size: 1.5rem;
         --top-pad: 20dvh;
     }
 
@@ -103,7 +107,7 @@ main .links {
     justify-content: center;
 
     font-family: 'Ubuntu Mono', monospace;
-    font-size: 1.5rem;
+    font-size: var(--sub-li-size);
 }
 
 .links li + li {
